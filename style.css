@@ -799,3 +799,69 @@ body {
 
 
 }
+
+/* Small phone improvements (<=420px) */
+@media screen and (max-width: 420px) {
+    .flag__birthday img{
+        width: 170px !important;
+    }
+    .flag__birthday{
+        transform: translateY(-40px);
+    }
+
+    .content{
+        padding-top: 1rem;
+        gap: 16px;
+    }
+
+    .content .left, .content .right{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.2rem;
+        letter-spacing: 4px;
+    }
+
+    .title .hat{
+        right: -60px;
+        top: -35px !important;
+    }
+
+    .date__of__birth{
+        width: auto !important;
+        max-width: 85%;
+        min-width: 120px;
+        padding: 6px 12px;
+        transform: translateY(-40px);
+        font-size: 1rem;
+        z-index: 2;
+    }
+
+    .date__of__birth span{font-size: 1rem; margin: 0 12px}
+
+    .name{padding: 0 12px; bottom: -4px}
+
+    #btn__letter{width: 85%; padding: 10px; font-size: .95rem}
+
+    .content .right .image{width: 140px; height: 140px}
+
+    .cricle{top: auto; right: 10px; bottom: 10px; transform: scale(1)}
+    .text__cricle{width: 80px; height: 80px; border-width: 4px}
+
+    /* Letter modal stacking */
+    .box__letter .letter__border{width: 95vw; height: auto; max-height: 90vh; padding-bottom: 12px}
+    .content__letter{flex-direction: column; padding-top: 8px}
+    .content__letter .left, .content__letter .right{width: 100%; border-right: none; padding: 8px}
+    .content__letter .left{display:flex; justify-content:center; padding-bottom: 8px}
+    .content__letter .left #heart__letter{width: 90%; height: auto; opacity: 1}
+    .content__letter .right .love__img{position: relative; right: auto; top: auto; margin-top: 6px; opacity: 1; display:flex; justify-content:center}
+    .content__letter .right .text__letter{margin-top: 8px; font-size: 1rem; padding: 10px}
+    #mewmew{position: relative; opacity: 1; margin-top: 12px; display:block; width: 60px; height: auto}
+
+    .right .balloon_one{left: -40px; top: 0}
+    .right .balloon_two{right: -30px; top: 130px; transform: rotate(7deg)}
+
+    /* Reduce clutter on very small screens */
+    .decorate_star, .decorate_flower--one, .decorate_flower--two, .decorate_flower--three, .decorate_bottom, .smiley__icon{display: none !important}
+}
